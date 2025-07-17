@@ -3,40 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Language to English AI Agent</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Light gray background */
-        }
-        .container {
-            max-width: 1000px; /* Max width for content */
-        }
-        pre {
-            background-color: #1f2937; /* Dark gray for code blocks */
-            color: #e5e7eb; /* Light text for code */
-            padding: 1rem;
-            border-radius: 0.5rem;
-            overflow-x: auto; /* Enable horizontal scrolling for long lines */
-        }
-        code {
-            font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace; /* Monospace font for code */
-        }
-        h1, h2 {
-            color: #111827; /* Darker text for headings */
-        }
-        ul {
-            list-style-type: disc;
-            margin-left: 1.5rem;
-        }
-        ul ul {
-            list-style-type: circle;
-            margin-left: 1.5rem;
-        }
-    </style>
+    
 </head>
 <body class="p-4 sm:p-6 md:p-8">
     <div class="container mx-auto bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-xl">
@@ -44,11 +11,11 @@
             <span class="mr-3">🤟</span> Sign Language to English AI Agent <span class="ml-3">🗣️</span>
         </h1>
 
-   <p class="text-lg text-gray-700 mb-8 text-center">
+  <p class="text-lg text-gray-700 mb-8 text-center">
             An intelligent system that translates American Sign Language (ASL) gestures into English text in real-time, focusing exclusively on hand movements. Built with MediaPipe for robust landmark detection and TensorFlow for deep learning.
-   </p>
+        </p>
    <!-- Badges Section -->
-     <div class="flex flex-wrap justify-center gap-4 mb-10">
+        <div class="flex flex-wrap justify-center gap-4 mb-10">
             <img src="https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python" alt="Python 3.9+ Badge">
             <img src="https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow" alt="TensorFlow 2.x Badge">
             <img src="https://img.shields.io/badge/Keras-2.x-D00000?style=for-the-badge&logo=keras" alt="Keras 2.x Badge">
@@ -56,7 +23,7 @@
             <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT Badge">
         </div>
 
-<h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">✨ Features</h2>
+ <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">✨ Features</h2>
         <ul class="list-disc pl-6 mb-8 text-gray-700 space-y-2">
             <li><strong>Hands-Only Landmark Extraction:</strong> Focuses solely on left and right hand keypoints for sign recognition, ignoring face and pose data.</li>
             <li><strong>Real-time Gesture Recognition:</strong> Translates signs as you perform them in front of your webcam.</li>
@@ -67,7 +34,7 @@
             <li><strong>Model Persistence:</strong> Saves trained models for later use without retraining.</li>
         </ul>
 
-  <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🚀 How It Works</h2>
+ <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🚀 How It Works</h2>
         <p class="text-gray-700 mb-4">This project follows a standard machine learning pipeline:</p>
         <ol class="list-decimal pl-6 mb-8 text-gray-700 space-y-4">
             <li>
@@ -101,7 +68,7 @@
             </li>
         </ol>
 
-   <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">📂 Project Structure</h2>
+  <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">📂 Project Structure</h2>
         <pre class="mb-8"><code>.
 ├── MP_Data/                      # Directory to store collected hand landmark data
 │   ├── hello/                    # Subdirectory for 'hello' sign
@@ -118,8 +85,7 @@
 ├── realtime_translation.py       # Script for real-time sign language translation
 └── action.h5                     # (Generated) The trained Keras model file
 </code></pre>
-
-   <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🛠️ Getting Started</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🛠️ Getting Started</h2>
         <h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Prerequisites</h3>
         <ul class="list-disc pl-6 mb-8 text-gray-700 space-y-2">
             <li><strong>Python 3.9+</strong> installed.</li>
@@ -127,7 +93,7 @@
             <li>A working <strong>webcam</strong>.</li>
         </ul>
 
-   <h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Installation</h3>
+ <h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Installation</h3>
         <ol class="list-decimal pl-6 mb-8 text-gray-700 space-y-4">
             <li>
                 <strong>Clone the repository:</strong>
@@ -159,11 +125,10 @@ cd ASL_to_Eng.git
 </code></pre>
             </li>
         </ol>
-
-  <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🚀 Usage Guide</h2>
+<h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🚀 Usage Guide</h2>
         <p class="text-gray-700 mb-4">Follow these steps in order to collect data, train your model, and run the real-time translator.</p>
 
-  <h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Step 1: Collect Hand Landmark Data</h3>
+<h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Step 1: Collect Hand Landmark Data</h3>
         <p class="text-gray-700 mb-4">This script will guide you through collecting 30 sequences (videos) for each sign. Ensure your hands are clearly visible in the camera frame.</p>
         <ol class="list-decimal pl-6 mb-8 text-gray-700 space-y-4">
             <li>
@@ -187,7 +152,7 @@ rmdir /s /q MP_Data # For Windows
             </li>
         </ol>
 
-   <h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Step 2: Train the LSTM Model</h3>
+ <h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Step 2: Train the LSTM Model</h3>
         <p class="text-gray-700 mb-4">This script will train your AI model using the collected hand landmark data.</p>
         <ol class="list-decimal pl-6 mb-8 text-gray-700 space-y-4">
             <li>
@@ -211,7 +176,8 @@ model.add(LSTM(64, return_sequences=True, activation='tanh', input_shape=(sequen
                 </ul>
             </li>
         </ol>
-    <h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Step 3: Real-time Sign Language Translation</h3>
+
+<h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Step 3: Real-time Sign Language Translation</h3>
         <p class="text-gray-700 mb-4">Now, put your trained model to the test!</p>
         <ol class="list-decimal pl-6 mb-8 text-gray-700 space-y-4">
             <li>
@@ -226,7 +192,8 @@ model.add(LSTM(64, return_sequences=True, activation='tanh', input_shape=(sequen
                 </ul>
             </li>
         </ol>
-    <h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Troubleshooting Webcam Issues (if <code class="text-sm font-semibold">realtime_translation.py</code> exits immediately)</h3>
+
+<h3 class="text-2xl sm:text-3xl font-semibold mb-3 text-gray-800">Troubleshooting Webcam Issues (if <code class="text-sm font-semibold">realtime_translation.py</code> exits immediately)</h3>
         <p class="text-gray-700 mb-4">If the <code class="text-sm font-semibold">realtime_translation.py</code> script closes immediately, it's almost always a webcam access issue. The script includes enhanced error messages to help you diagnose.</p>
         <ul class="list-disc pl-6 mb-8 text-gray-700 space-y-2">
             <li><strong>Close other applications:</strong> Ensure no other software (Zoom, Teams, browser tabs, other camera apps) is using your webcam.</li>
@@ -241,7 +208,7 @@ model.add(LSTM(64, return_sequences=True, activation='tanh', input_shape=(sequen
             <li><strong>Camera Index:</strong> The script tries indices 0, 1, 2. If you have a unique setup, you might need to manually adjust <code class="text-sm font-semibold">cv2.VideoCapture(i)</code> in <code class="text-sm font-semibold">realtime_translation.py</code>.</li>
         </ul>
 
-   <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🔮 Future Enhancements</h2>
+ <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🔮 Future Enhancements</h2>
         <ul class="list-disc pl-6 mb-8 text-gray-700 space-y-2">
             <li><strong>Expand Vocabulary:</strong> Add more signs and corresponding data.</li>
             <li><strong>Improved UI:</strong> Develop a more user-friendly graphical interface (e.g., using PyQt, Tkinter, or a web framework).</li>
@@ -250,13 +217,13 @@ model.add(LSTM(64, return_sequences=True, activation='tanh', input_shape=(sequen
             <li><strong>Deployment:</strong> Explore deploying the model to a web service or mobile application.</li>
         </ul>
 
-  <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🤝 Contributing</h2>
+ <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🤝 Contributing</h2>
         <p class="text-gray-700 mb-8">Contributions are welcome! If you have suggestions, bug reports, or want to add new features, please feel free to open an issue or submit a pull request.</p>
 
-  <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">📜 License</h2>
-      <p class="text-gray-700 mb-8">This project is licensed under the MIT License - see the <code class="text-sm font-semibold">LICENSE</code> file for details.</p>
+ <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">📜 License</h2>
+        <p class="text-gray-700 mb-8">This project is licensed under the MIT License - see the <code class="text-sm font-semibold">LICENSE</code> file for details.</p>
 
-   <h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🙏 Acknowledgements</h2>
+<h2 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-800">🙏 Acknowledgements</h2>
         <ul class="list-disc pl-6 mb-8 text-gray-700 space-y-2">
             <li><strong>Google MediaPipe:</strong> For powerful and easy-to-use pose, face, and hand landmark detection.</li>
             <li><strong>TensorFlow & Keras:</strong> For the robust deep learning framework.</li>
