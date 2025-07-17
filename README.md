@@ -1,5 +1,5 @@
 🤟 Sign Language to English AI Agent 🗣️
-An intelligent system that translates American Sign Language (ASL) gestures into English text in real-time, focusing exclusively on hand movements. Built with MediaPipe for robust landmark detection and TensorFlow/Keras for deep learning.
+An intelligent system that translates American Sign Language (ASL) gestures into English text in real-time, focusing exclusively on hand movements. Built with MediaPipe for robust landmark detection and TensorFlow for deep learning.
 
 ✨ Features
 Hands-Only Landmark Extraction: Focuses solely on left and right hand keypoints for sign recognition, ignoring face and pose data.
@@ -83,10 +83,8 @@ A working webcam.
 Installation
 Clone the repository:
 
-git clone https://github.com/your-username/sign-language-ai-agent.git
-cd sign-language-ai-agent
-
-(Replace your-username with your actual GitHub username)
+git clone https://github.com/ayushjain2729/ASL_to_Eng.git
+cd ASL_to_Eng.git
 
 Create a virtual environment (recommended):
 
